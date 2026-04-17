@@ -1,0 +1,8 @@
+{
+  "name": "codex-mcp-demo",
+  "version": "0.1.0",
+  "description": "Sample Codex-format plugin: reviewer agent + HTTP MCP server.",
+  "author": { "name": "Voidleap" },
+  "license": "MIT",
+  "keywords": ["codex", "mcp", "demo"]
+}

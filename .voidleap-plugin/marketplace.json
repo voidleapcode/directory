@@ -1,0 +1,58 @@
+{
+  "name": "Voidleap Directory",
+  "owner": {
+    "name": "Voidleap",
+    "url": "https://github.com/voidleapcode"
+  },
+  "metadata": {
+    "description": "Curated plugins maintained by the Voidleap team.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "commit-helper",
+      "description": "Generate Conventional Commit messages from staged diffs.",
+      "version": "0.1.0",
+      "category": "git",
+      "verified": true,
+      "keywords": ["git", "commit", "conventional-commits"],
+      "author": { "name": "Voidleap" },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/voidleapcode/directory.git",
+        "subdir": "plugins/commit-helper",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "repo-hygiene",
+      "description": "Warn before committing large binaries or .env files (Claude Code format).",
+      "version": "0.1.0",
+      "category": "hooks",
+      "verified": true,
+      "keywords": ["hooks", "guardrails", "claude-code"],
+      "author": { "name": "Voidleap" },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/voidleapcode/directory.git",
+        "subdir": "plugins/repo-hygiene",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "codex-mcp-demo",
+      "description": "Sample Codex-format plugin bundling a reviewer agent and an HTTP MCP server.",
+      "version": "0.1.0",
+      "category": "mcp",
+      "verified": true,
+      "keywords": ["codex", "mcp", "demo"],
+      "author": { "name": "Voidleap" },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/voidleapcode/directory.git",
+        "subdir": "plugins/codex-mcp-demo",
+        "ref": "main"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "httpbin": {
+      "type": "http",
+      "url": "https://httpbin.org/anything/mcp"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "grep -qE '(^|[ /])\\.env($|[ :])|\\.(p12|pem|pfx|key)$' <<< \"$VOIDLEAP_TOOL_INPUT\" && echo 'hygiene: blocking commit touching secrets' && exit 2 || exit 0",
+            "timeout": 2000
+          }
+        ]
+      }
+    ]
+  }
+}

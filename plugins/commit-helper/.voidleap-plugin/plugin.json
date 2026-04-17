@@ -1,0 +1,12 @@
+{
+  "name": "commit-helper",
+  "version": "0.1.0",
+  "description": "Generate Conventional Commit messages from staged diffs.",
+  "author": { "name": "Voidleap" },
+  "license": "MIT",
+  "keywords": ["git", "commit"],
+  "skills": "./skills/",
+  "voidleap": {
+    "category": "git"
+  }
+}
