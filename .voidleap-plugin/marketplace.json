@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Curated plugins maintained by the Voidleap team.",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "plugins": [
     {
@@ -51,6 +51,38 @@
         "source": "git-subdir",
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "plugins/codex-mcp-demo",
+        "ref": "main"
+      }
+    }
+  ],
+  "items": [
+    {
+      "kind": "skill",
+      "name": "changelog-entry",
+      "description": "Draft a Keep-a-Changelog entry from a short description of a change.",
+      "version": "0.1.0",
+      "verified": true,
+      "keywords": ["changelog", "docs"],
+      "author": { "name": "Voidleap" },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/voidleapcode/directory.git",
+        "subdir": "items/skills/changelog-entry",
+        "ref": "main"
+      }
+    },
+    {
+      "kind": "agent",
+      "name": "tldr",
+      "description": "Condense long text into a three-line TL;DR.",
+      "version": "0.1.0",
+      "verified": true,
+      "keywords": ["summary", "tldr"],
+      "author": { "name": "Voidleap" },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/voidleapcode/directory.git",
+        "subdir": "items/agents/tldr",
         "ref": "main"
       }
     }

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+- Add `changelog-entry` standalone skill item.
+- Add `tldr` standalone agent item.
+- Catalog now includes an `items` array alongside `plugins`.
+
 ## 0.1.0 (initial)
 
 - Seed the Voidleap Directory monorepo.
