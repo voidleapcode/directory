@@ -12,11 +12,8 @@ voidleap plugin install voidleap-directory:repo-hygiene --scope workspace
 
 ## Files
 
-- `.claude-plugin/plugin.json` — CC-format manifest. Voidleap's translator
-  detects the `.claude-plugin/` directory and applies the CC-format pipeline
-  (`src/core/plugins/translate/cc.ts`).
+- `.claude-plugin/plugin.json` — CC-format manifest.
 - `skills/hygiene/SKILL.md` — reference skill for users asking about git
   hygiene.
-- `hooks/hooks.json` — CC-nested shape. Voidleap's hook translator
-  (`src/core/plugins/translate/hooks.ts`) flattens this into the scope's
-  hooks JSON.
+- `hooks/hooks.json` — CC-nested hook config. Voidleap translates this
+  into its own hook format at install time.

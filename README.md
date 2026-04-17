@@ -1,27 +1,23 @@
 # Voidleap Directory
 
-Curated plugins maintained by the Voidleap team. This repository backs the
-hardcoded `voidleap-directory` marketplace in Voidleap — see
-`VOIDLEAP_CATALOG` in `src/core/plugins/marketplace.ts`.
+Curated plugins maintained by the Voidleap team. This repository is the
+source of the `voidleap-directory` marketplace that ships with Voidleap.
 
 ## Layout
 
-- `.voidleap-plugin/marketplace.json` — catalog. Validated against
-  `MarketplaceIndexSchema` (`src/core/plugins/schema.ts`). Each entry uses
-  the `git-subdir` source and points at a subdirectory of this repo.
+- `.voidleap-plugin/marketplace.json` — the catalog. Every plugin listed
+  here is fetchable from the Directory UI and CLI.
 - `plugins/<name>/` — one plugin per directory. Each plugin carries its own
-  manifest in the format appropriate for its archetype (voidleap native,
-  Claude Code, or Codex); Voidleap's translator detects the format from
-  the manifest directory (`.voidleap-plugin/`, `.claude-plugin/`, or
-  `.codex-plugin/`).
+  manifest in whichever format fits the plugin's archetype (Voidleap
+  native, Claude Code, or Codex).
 
 ## Current plugins
 
-| Name | Format | Exercises |
+| Name | Format | What it does |
 | --- | --- | --- |
-| `commit-helper` | voidleap native | skill loader namespace `@<plugin>/`, "risky tool" install flag |
-| `repo-hygiene` | Claude Code | CC manifest detection, CC → Voidleap hook translation |
-| `codex-mcp-demo` | Codex | Codex detection, CC-style agent frontmatter rewrite, `.mcp.json` HTTP translation |
+| `commit-helper` | Voidleap native | Generates Conventional Commit messages from staged diffs. |
+| `repo-hygiene` | Claude Code | Blocks shell commands that touch `.env` files or private keys. |
+| `codex-mcp-demo` | Codex | Bundles a concise code-reviewer agent and an HTTP MCP server. |
 
 ## Installing
 
@@ -45,12 +41,9 @@ Via UI: open the Directory pane, pick a plugin, confirm the install dialog.
 4. Bump this repo's `CHANGELOG.md`.
 5. Open a PR.
 
-Authoring reference: `src/docs/22-plugins.md` in the Voidleap repo.
+## Repo shape
 
-## Layout note
-
-This repo is currently a monorepo — plugins live as subdirectories and the
-catalog references them via `git-subdir`. Voidleap's cache layer
-(`src/core/plugins/cache.ts`) already supports extracting per-plugin repos
-later without any client change; we'd just flip each marketplace entry's
-`source` from `git-subdir` to `github` and publish a standalone repo.
+This is currently a monorepo — plugins live as subdirectories and the
+catalog references them by path. Individual plugins can be migrated to
+standalone repos later without breaking installs; the catalog entry just
+switches from a subdirectory reference to a full repo reference.

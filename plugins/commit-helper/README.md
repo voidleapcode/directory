@@ -13,9 +13,8 @@ Or pick it from the Directory UI.
 
 ## Files
 
-- `.voidleap-plugin/plugin.json` — manifest (voidleap native format).
+- `.voidleap-plugin/plugin.json` — manifest (Voidleap native format).
 - `skills/commit/SKILL.md` — the skill. Declares `bash` in `allowed-tools`,
-  so the Directory install dialog flags it as "risky".
+  so the Directory install dialog flags it as "risky" (expected).
 
-Namespaced as `commit-helper:commit` once installed (see
-`src/docs/22-plugins.md`).
+Once installed, the skill is namespaced as `commit-helper:commit`.
