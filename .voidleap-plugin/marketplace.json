@@ -6,13 +6,13 @@
   },
   "metadata": {
     "description": "Curated plugins maintained by the Voidleap team. Inclusion policy: https://github.com/voidleapcode/voidleap/blob/main/docs/curated-marketplace-policy.md",
-    "version": "0.2.0"
+    "version": "0.2.1"
   },
   "plugins": [
     {
       "name": "commit-helper",
       "description": "Generate Conventional Commit messages from staged diffs.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "git",
       "verified": true,
       "keywords": ["git", "commit", "conventional-commits"],
@@ -22,7 +22,7 @@
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "plugins/commit-helper",
         "ref": "main",
-        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
+        "sha": "505f6d2792943cacb935748e1ab3b4b31f6ca0ce"
       }
     },
     {
@@ -62,7 +62,7 @@
     {
       "name": "changelog-entry",
       "description": "Draft a Keep-a-Changelog entry from a short description of a change.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "verified": true,
       "keywords": ["changelog", "docs"],
       "author": { "name": "Voidleap" },
@@ -71,7 +71,7 @@
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "items/skills/changelog-entry",
         "ref": "main",
-        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
+        "sha": "505f6d2792943cacb935748e1ab3b4b31f6ca0ce"
       }
     }
   ],
@@ -79,7 +79,7 @@
     {
       "name": "tldr",
       "description": "Condense long text into a three-line TL;DR.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "verified": true,
       "keywords": ["summary", "tldr"],
       "author": { "name": "Voidleap" },
@@ -88,7 +88,7 @@
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "items/agents/tldr",
         "ref": "main",
-        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
+        "sha": "505f6d2792943cacb935748e1ab3b4b31f6ca0ce"
       }
     }
   ]
