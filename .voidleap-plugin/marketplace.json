@@ -5,8 +5,8 @@
     "url": "https://github.com/voidleapcode"
   },
   "metadata": {
-    "description": "Curated plugins maintained by the Voidleap team.",
-    "version": "0.1.1"
+    "description": "Curated plugins maintained by the Voidleap team. Inclusion policy: https://github.com/voidleapcode/voidleap/blob/main/docs/curated-marketplace-policy.md",
+    "version": "0.2.0"
   },
   "plugins": [
     {
@@ -21,7 +21,8 @@
         "source": "git-subdir",
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "plugins/commit-helper",
-        "ref": "main"
+        "ref": "main",
+        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
       }
     },
     {
@@ -36,7 +37,8 @@
         "source": "git-subdir",
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "plugins/repo-hygiene",
-        "ref": "main"
+        "ref": "main",
+        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
       }
     },
     {
@@ -51,13 +53,13 @@
         "source": "git-subdir",
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "plugins/codex-mcp-demo",
-        "ref": "main"
+        "ref": "main",
+        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
       }
     }
   ],
-  "items": [
+  "skills": [
     {
-      "kind": "skill",
       "name": "changelog-entry",
       "description": "Draft a Keep-a-Changelog entry from a short description of a change.",
       "version": "0.1.0",
@@ -68,11 +70,13 @@
         "source": "git-subdir",
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "items/skills/changelog-entry",
-        "ref": "main"
+        "ref": "main",
+        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
       }
-    },
+    }
+  ],
+  "agents": [
     {
-      "kind": "agent",
       "name": "tldr",
       "description": "Condense long text into a three-line TL;DR.",
       "version": "0.1.0",
@@ -83,7 +87,8 @@
         "source": "git-subdir",
         "url": "https://github.com/voidleapcode/directory.git",
         "subdir": "items/agents/tldr",
-        "ref": "main"
+        "ref": "main",
+        "sha": "e37945ccc6009660c05fc37898e541d8c14da6c6"
       }
     }
   ]
