@@ -30,3 +30,5 @@ TL;DR:
 - If the input is a file path, read it with the `read` tool. If it's a
   glob, pick the single most relevant match (ask the user if ambiguous).
 - Never fabricate details that aren't in the source.
+- If the source is shorter than three sentences, return it verbatim rather
+  than padding out a three-bullet TL;DR.

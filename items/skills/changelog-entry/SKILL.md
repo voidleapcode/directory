@@ -36,3 +36,4 @@ Given a one-line description of what changed, produce a properly-formatted
 - Don't mention implementation details (file names, function names) — the
   changelog is a user-facing document.
 - If the change has a linked issue / PR, suffix with ` (#123)`.
+- Wrap lines at roughly 80 columns so the entry reads cleanly on GitHub.
